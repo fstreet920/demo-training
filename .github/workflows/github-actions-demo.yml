@@ -51,7 +51,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'workflow_dispatch'
     needs: Build
-    environment: 'Configure Production'
+    environment: 'Configure Prod'
     steps:
       - run: | 
           echo "  Production .."
